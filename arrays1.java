@@ -1,10 +1,13 @@
 import java.util.Scanner;
 
+// Se va ha comentar el codigo inicial
 public class arrays1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int end = 0;
+		// Empieza el bucle
 		while (end != 1) {
+			// Se le da al usuario las elecciones del menu
 			System.out.println("Que ejercicio quieres hacer?");
 			int chs = 0;
 			chs = sc.nextInt();
@@ -13,6 +16,7 @@ public class arrays1 {
 				System.out.println("Que ejercicio quieres hacer?");
 				chs = sc.nextInt();
 			}
+			// Si el valor introducido es uno no querido
 			while (chs > 11 || chs < 1) {
 				System.out.println("Numero invalido (1-11)");
 				chs = sc.nextInt();
